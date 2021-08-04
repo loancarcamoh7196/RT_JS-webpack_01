@@ -7,8 +7,8 @@ const TerserPlugin = require('terser-webpack-plugin');
 const DotEnv = require('dotenv-webpack')
 
 module.exports = {
-    entry: './src/index.js', //Punto de entrada
-    output: { // Hacia donde vamos a enviar lo que va a preparar webpack
+    entry: './src/index.js',
+    output: { 
         path: path.resolve(__dirname, 'dist'), // Nombre del directorio
         filename: '[name].[contenthash].js', // Nombre del archivo
         assetModuleFilename: 'assets/images/[hash][ext][query]',
@@ -51,11 +51,11 @@ module.exports = {
                 use: {
                     loader: 'url-loader',
                     options: {
-                        limit: 1000,
+                        limit: 10000,
                         mimetype: 'application/font-woff',
                         name: '[name].[contenthash].[ext]',
                         outputPath: './assets/fonts/',
-                        publicPath: './assets/fonts/',
+                        publicPath: '../assets/fonts/',
                         esModule: false
                     }
                 }
