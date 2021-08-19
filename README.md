@@ -1,1 +1,2 @@
-# js-portfolio
+# Repo  de Curso  Webpack
+Curso Webpacken platzi
