@@ -1,2 +1,2 @@
 # Repo  de Curso  Webpack
-Curso Webpacken platzi
+Curso Webpack de Platzi
